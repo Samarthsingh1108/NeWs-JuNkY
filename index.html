@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeWsJuNkY</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <nav>
+        <div class="main-nav container flex" >
+            <a href="#" class="company-logo"><img src="images/s__4_-removebg-preview.png" alt="company logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-links nav-items"id="sports" onclick="onNavItemsClick('sports')">Sports</li>
+                    <li class="hover-links nav-items"id="finance" onclick="onNavItemsClick('finance')">Finance</li>
+                    <li class="hover-links nav-items"id="politics" onclick="onNavItemsClick('politics')">Politics</li>
+                    <li class="hover-links nav-items"id="entertainment" onclick="onNavItemsClick('entertainment')">Entertainment</li>
+                    <li class="hover-links nav-items"id="crime" onclick="onNavItemsClick('crime')">Crime</li>
+                 
+                    
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g. Tech">
+                <button id="search-button"class="search-button">Search</button>
+               
+            </div>
+
+        </div>
+
+
+    </nav>
+   
+    
+                
+    <main>
+       <a href="#" onclick='reload()'><img src="images/News.png" class="junky" alt="news" > </a>
+        
+       
+        
+        <div class="cards-container container flex" id="cards-container">
+            
+            
+
+        </div>
+
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400X200" alt="news image" id="news-img">
+            </div>
+            <div class="cards-content">
+                <h3 id="news-title">This is the Titel</h3>
+                <u><h6 class="news-source"  id="news-source">End Gadget 26/08/2023</h6></u>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis commodi corrupti molestias aliquam in saepe, rerum incidunt. Aspernatur a exercitationem incidunt dolorum. Corporis deleniti ut dolorem necessitatibus animi impedit exercitationem?</p>
+            </div>
+        </div>
+
+    </template>
+
+
+    <script src="script.js"></script>
+    
+    
+</body>
+</html>
